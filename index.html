@@ -26,8 +26,9 @@
           border-radius: 8px;
           font-weight: 900;
           border: none;
+          padding: 20px 30px;
         }
-        .fruit-primary-btn{
+        .fruit-primary-btn:hover{
           background-color: #fa9092;
         }
     </style>
@@ -42,9 +43,12 @@
                         'fruit-color-3' : '#121212',
                         'fruit-color-4' : "#F85559",
                     },
-                //     backgroundImage: {
-                //     'hero-bg': "url('./images/banner.png')",
-                //   }
+                    backgroundImage: {
+                    'hero-bg-1': "url('./images/banner1.png')",
+                    'hero-bg-2': "url('./images/banner2.png')",
+                    'hero-bg-3': "url('./images/banner3.png')",
+                    'hero-bg-4': "url('./images/banner4.png')",
+                  }
             }
         }
       }
@@ -58,51 +62,256 @@
         <nav class="">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <div class="dropdown">
+                  <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
+                      <li><a>Item 1</a></li>
+                      <li>
                         <a>Parent</a>
                         <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
                         </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                      </li>
+                      <li><a>Item 3</a></li>
                     </ul>
-                    </div>
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                  <ul class="menu menu-horizontal px-1">
                     <li><a>Item 1</a></li>
                     <li tabindex="0">
-                        <details>
+                      <details>
                         <summary>Parent</summary>
                         <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
                         </ul>
-                        </details>
+                      </details>
                     </li>
                     <li><a>Item 3</a></li>
-                    </ul>
+                  </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                  <a class="btn">Button</a>
                 </div>
-                </div>
+              </div>
         </nav>
         <!-- Hero Slider Area -->
-        <div>
+        <div class="carousel w-full h-[600px]">
+            <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
+            <div id="slide1" class="carousel-item relative w-full bg-hero-bg-1">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                    <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                    <p>We supply highly quality organic products</p>
+                    <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full bg-hero-bg-2">
+             
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+          </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full bg-hero-bg-3">
             
-        </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+          </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full bg-hero-bg-4">
+             
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+              <div class="w-9/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-[#fff]">
+           
+                <h1 class="fruit-color-1 text-[72px] font-extrabold leading-tight">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <button class="fruit-primary-btn mt-8">Shop Now</button>
+
+          </div>
+            </div>
+          </div>
     </header>
     <!-- Main section -->
     <main class="xl:container mx-auto">
+        <!-- Deal of the day -->
+        <div class="flex justify-evenly">
+            <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit6.png" alt="Shoes" class="">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+            <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit7.png" alt="Shoes" class="">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+            <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit8.png" alt="Shoes" class="rounded w-[50%]">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+            <div class="card w-96">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit9.png" alt="Shoes" class="">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+        </div>
+        <!-- Meet the team section -->
+        <!-- <div class="flex justify-evenly">
+            <div class="card w-96 bg-base-100 shadow">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member1.png" alt="Shoes" class="rounded w-[50%]">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member2.png" alt="Shoes" class="rounded w-[50%]">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member3.png" alt="Shoes" class="rounded w-[50%]">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member4.png" alt="Shoes" class="rounded w-[50%]">
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400">
+                  </div>
+                  <h4>Regina Miles</h4>
+                  <h4>Banker</h4>
+                  
+                </div>
+              </div>
+        </div> -->
         <!--  -->
         <section class="my-16">
             <div class="text-center space-y-3 pb-16  px-5 lg:px-0">
