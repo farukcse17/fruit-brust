@@ -10,56 +10,52 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google fonts links -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/0bd4eed3e5.js" crossorigin="anonymous"></script>
     <!-- Custom css styles -->
     <style>
-        /* .font-garamond {
-            font-family: 'EB Garamond', serif;
+        .font-lato {
+            font-family: 'Lato', sans-serif;
         }
-
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
-        }
-        .fruit-site-primary-btn{
-          background-color: #B68C5A;
+        .fruit-primary-btn{
+          background-color: #F85559;
           color: #fff;
           border-radius: 8px;
-          font-weight: 600;
+          font-weight: 900;
           border: none;
         }
-        .fruit-site-primary-btn:hover{
-          background-color: #f7c88f;
-        } */
+        .fruit-primary-btn{
+          background-color: #fa9092;
+        }
     </style>
     <!-- Customization tailwind css -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                  //   colors: {
-                  //       'primary-color': '#707070',
-                  //       'slider-text' : '#F3F3F3',
-                  //       'btn-bg' : '#B68C5A',
-                  //       'btn-color' : "#fff",
-                  //   },
-                  //   backgroundImage: {
-                  //   'hero-bg': "url('./images/banner.png')",
-                  // }
+                    colors: {
+                        'fruit-color-1' : '#FFFFFF',
+                        'fruit-color-2' : '#12121266',
+                        'fruit-color-3' : '#121212',
+                        'fruit-color-4' : "#F85559",
+                    },
+                //     backgroundImage: {
+                //     'hero-bg': "url('./images/banner.png')",
+                //   }
             }
         }
       }
     </script>
 </head>
 
-<body class="">
+<body class="font-lato text-base">
     <!-- Header section -->
     <header class="xl:container mx-auto">
         <!-- Navbar Area -->
-        <nav class="py-10">
+        <nav class="">
             
         </nav>
         <!-- Hero Slider Area -->
@@ -68,7 +64,15 @@
         </div>
     </header>
     <!-- Main section -->
-    
+    <main class="xl:container mx-auto">
+        <!--  -->
+        <section class="my-16">
+            <div class="text-center space-y-3 pb-16  px-5 lg:px-0">
+                <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">The Legal Practice Area</h3>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have<br> suffered alteration in some form, by injected humour.</p>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer section -->
 
