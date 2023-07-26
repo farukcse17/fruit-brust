@@ -31,6 +31,9 @@
         .fruit-primary-btn:hover{
           background-color: #fa9092;
         }
+        img{
+          display: inline-block !important;
+        }
     </style>
     <!-- Customization tailwind css -->
     <script>
@@ -44,10 +47,10 @@
                         'fruit-color-4' : "#F85559",
                     },
                     backgroundImage: {
-                    'hero-bg-1': "url('./images/banner1.png')",
-                    'hero-bg-2': "url('./images/banner2.png')",
-                    'hero-bg-3': "url('./images/banner3.png')",
-                    'hero-bg-4': "url('./images/banner4.png')",
+                        'hero-bg-1': "url('./images/banner1.png')",
+                        'hero-bg-2': "url('./images/banner2.png')",
+                        'hero-bg-3': "url('./images/banner3.png')",
+                        'hero-bg-4': "url('./images/banner4.png')",
                   }
             }
         }
@@ -176,21 +179,21 @@
                           <span class="countdown text-4xl font-extrabold">
                             <span style="--value:15;"></span>
                           </span>
-                          <img class="inline-block pl-5" src="./images/icons/three-dotted.png" alt="">
+                          <img class="pl-5" src="./images/icons/three-dotted.png" alt="">
                           <p class="text-fruit-color-2">Days</p>
                         </div> 
                         <div>
                           <span class="countdown text-4xl font-extrabold">
                             <span style="--value:10;"></span>
                           </span>
-                          <img class="inline-block pl-5" src="./images/icons/three-dotted.png" alt="">
+                          <img class="pl-5" src="./images/icons/three-dotted.png" alt="">
                           <p class="text-fruit-color-2">Hours</p>
                         </div> 
                         <div>
                           <span class="countdown text-4xl font-extrabold">
                             <span style="--value:24;"></span>
                           </span>
-                          <img class="inline-block pl-5" src="./images/icons/three-dotted.png" alt="">
+                          <img class="pl-5" src="./images/icons/three-dotted.png" alt="">
                           <p class="text-fruit-color-2">Minutes</p>
                         </div> 
                         <div>
@@ -305,9 +308,9 @@
                                 <h4 class="text-2xl font-bold">Awlad Hossain</h4>
                                 <p>Fruits Expert</p>
                                 <div class="space-x-3">
-                                    <a href=""><img class="inline-block" src="./images/icons/facebook.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/twitter.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/linkedin.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/facebook.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/twitter.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/linkedin.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -317,9 +320,9 @@
                                 <h4 class="text-2xl font-bold">Awlad Hossain</h4>
                                 <p>Fruits Expert</p>
                                 <div class="space-x-3">
-                                    <a href=""><img class="inline-block" src="./images/icons/facebook.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/twitter.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/linkedin.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/facebook.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/twitter.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/linkedin.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -329,9 +332,9 @@
                                 <h4 class="text-2xl font-bold">Awlad Hossain</h4>
                                 <p>Fruits Expert</p>
                                 <div class="space-x-3">
-                                    <a href=""><img class="inline-block" src="./images/icons/facebook.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/twitter.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/linkedin.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/facebook.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/twitter.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/linkedin.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -341,9 +344,9 @@
                                 <h4 class="text-2xl font-bold">Awlad Hossain</h4>
                                 <p>Fruits Expert</p>
                                 <div class="space-x-3">
-                                    <a href=""><img class="inline-block" src="./images/icons/facebook.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/twitter.png" alt=""></a>
-                                    <a href=""><img class="inline-block" src="./images/icons/linkedin.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/facebook.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/twitter.png" alt=""></a>
+                                    <a href=""><img src="./images/icons/linkedin.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -354,12 +357,12 @@
     </main>
 
     <!-- Footer section -->
-    <footer class="bg-fruit-color-3 text-white">
-        <div class="flex flex-col justify-center items-center">
-            <div>
+    <footer class="bg-fruit-color-3 text-white py-[140px] mt-20">
+        <div class="flex flex-col justify-center items-center text-center">
+            <div class="space-y-16">
                 <img src="./images/logo.png" alt="">
-                <span class="text-[40px] font-bold ">Fruit Burst</span>
-                <ul class="flex space-x-5">
+                <span class="text-[40px] font-bold ml-4">Fruit Burst</span>
+                <ul class="flex space-x-16">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Shop</a></li>
@@ -367,13 +370,13 @@
                     <li><a href="#">Support</a></li>
                     <li><a href="#">My Account</a></li>
                 </ul>
-                <div>
-                    <img class="inline-block" src="./images/f-twitter.png" alt="">
-                    <img class="inline-block" src="./images/f-facebook.png" alt="">
-                    <img class="inline-block" src="./images/f-youtube.png" alt="">
-                    <img class="inline-block" src="./images/f-linkedin.png" alt="">
-                    <img class="inline-block" src="./images/f-instagram.png" alt="">
-                    <img class="inline-block" src="./images/f-apple.png" alt="">
+                <div class="space-x-10">
+                  <a href="#"><img src="./images/f-twitter.png" alt=""></a>
+                  <a href="#"><img src="./images/f-facebook.png" alt=""></a>
+                  <a href="#"><img src="./images/f-youtube.png" alt=""></a>
+                  <a href="#"><img src="./images/f-linkedin.png" alt=""></a>
+                  <a href="#"><img src="./images/f-instagram.png" alt=""></a>
+                  <a href="#"><img src="./images/f-apple.png" alt=""></a>
                 </div>
             </div>
         </div>
