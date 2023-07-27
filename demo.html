@@ -34,15 +34,6 @@
         img{
           display: inline-block !important;
         }
-        .nav-search-input{
-          border-top-left-radius: 50px !important;
-          border-bottom-left-radius: 50px !important;
-        }
-        .nav-search-btn{
-          border-top-right-radius: 50px !important;
-          border-bottom-right-radius: 50px !important;
-          background-color: white ;
-        }
         @media screen and (max-width: 768px){
           .slider-inner-box{
             display: none !important;
@@ -76,32 +67,46 @@
     <!-- Header section -->
     <header class="xl:container mx-auto">
         <!-- Navbar Area -->
-        <nav class="text-white flex justify-between items-center py-8 px-12 bg-fruit-color-4 rounded-[600px] my-14">
-          <!-- Start Part -->
-          <div class="flex-1">
-            <ul class="flex space-x-7 font-bold">
-              <li><a href="">Home</a></li>
-              <li><a href="">About Us</a></li>
-              <li><a href="">Shop</a></li>
-              <li><a href="">All Fruits</a></li>
-            </ul>
-          </div>
-          <!-- Center Part -->
-          <div class="flex-1">
-            <img src="./images/logo.png" alt="">
-            <span class="text-[40px] font-bold ml-4">Fruit Burst</span>
-          </div>
-          <!-- End Part -->
-          <div class="flex-1">
-            <div class="form-control">
-              <div class="input-group rounded-3xl">
-                <input type="text" placeholder="Search…" class="input input-bordered w-full nav-search-input" />
-                <button class="btn btn-square nav-search-btn bg-white">
-                  <i class="fas fa-search"></i>
-                </button>
+        <nav class="">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Item 1</a></li>
+                    <li tabindex="0">
+                      <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Item 3</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn">Button</a>
+                </div>
               </div>
-            </div>
-          </div>
         </nav>
         <!-- Hero Slider Area -->
         <div class="px-5 md:px-0">
