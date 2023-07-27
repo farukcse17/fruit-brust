@@ -118,7 +118,7 @@
 
                     <div class="form-control hidden md:block">
                         <div class="input-group rounded-3xl">
-                            <input type="text" placeholder="Search…" class="input input-bordered w-full nav-search-input" />
+                            <input type="text" placeholder="Search here" class="input input-bordered w-full nav-search-input" />
                             <button class="btn btn-square nav-search-btn bg-white">
                             <i class="fas fa-search"></i>
                             </button>
@@ -543,7 +543,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- Left part -->
-                <div class="space-y-7">
+                <div class="space-y-7 lg:order-1 order-2">
                     <div class="flex flex-col md:flex-row justify-center items-center gap-6">
                         <div>
                             <div class="w-16 h-16 rounded-full bg-[#ddd6d666] flex justify-center items-center">
@@ -582,11 +582,11 @@
                     </div>
                 </div>
                 <!-- Middle Part -->
-                <div>
-                    <img src="./images/choose-us.png" alt="" class="w-full">
+                <div class="order-1 lg:order-2">
+                    <img src="./images/choose-us.png" alt="" class="w-full h-full">
                 </div>
                 <!-- Right Part -->
-                <div class="space-y-3">
+                <div class="space-y-7 order-3">
                     <div class="flex flex-col md:flex-row-reverse justify-center items-center gap-6">
                         <div>
                             <div class="w-16 h-16 rounded-full bg-[#ddd6d666] flex justify-center items-center">
@@ -633,8 +633,10 @@
     <footer class="bg-fruit-color-3 text-white py-[140px] mt-20">
         <div class="flex flex-col justify-center items-center text-center px-5 md:px-0">
             <div class="space-y-16">
-                <img src="./images/logo.png" alt="">
-                <span class="text-[40px] font-bold ml-4">Fruit Burst</span>
+                <div class="flex items-center justify-center">
+                    <img src="./images/logo.png" alt="">
+                    <span class="text-[40px] font-bold ml-4">Fruit Burst</span>
+                </div>
                 <ul class="flex gap-14 items-center justify-center flex-wrap">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
